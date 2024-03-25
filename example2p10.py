@@ -17,8 +17,13 @@ def dfa_accept(input_string):
     return state != 4
 
 # Test the DFA
-input_string = input("Enter input string: ")
-if dfa_accept(input_string):
-    print("Accepted")
-else:
-    print("Rejected")
+while True:
+    input_string = input("Enter input string: ")
+    if dfa_accept(input_string):
+        print("Accepted")
+    else:
+        print("Rejected")
+
+    choice = input('Try Again? Y/N: ')
+    if choice == 'N':
+        break
