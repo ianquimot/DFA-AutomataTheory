@@ -1,3 +1,5 @@
+# Example 2.9: Design a DFA that accepts even number of 0’s and even number of 1’s
+
 def dfa_accept(input_string):
     state = 0  # Initial state where both counts are even
     for char in input_string:
