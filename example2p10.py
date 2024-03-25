@@ -8,7 +8,7 @@ def dfa_accept(input_string):
                 state += 1
             else:
                 state = 4  # More than 3 'a's encountered, transition to reject state
-        elif char != 'b':
+        elif char == 'b':
             return False  # Reject if input contains any other character
 
     # Accept if final state is 0, 1, 2, or 3
