@@ -5,7 +5,7 @@ def dfa_accept(input_string):
     for char in input_string:
         if char == 'a':
             if state < 3:  # Accept 'a' only if less than 3 'a's encountered
-                state += 1
+                state += 1 # basta naga represent ito sa current state ng DFA
             else:
                 state = 4  # More than 3 'a's encountered, transition to reject state
         elif char != 'b':
