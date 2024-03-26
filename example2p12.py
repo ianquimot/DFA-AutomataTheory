@@ -9,7 +9,7 @@ def dfa_accept(input_string):
             elif state == 1:
                 state = 0
         
-        elif char == 'b':
+        elif char != 'a':
             return False
         
 
