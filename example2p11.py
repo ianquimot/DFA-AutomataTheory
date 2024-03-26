@@ -6,19 +6,15 @@ def dfa_accept(input_string):
         if char == 'a':
             if state == 0:
                 state = 1
-            elif state == 0:
-                state = 3
             elif state == 2:
                 state = 2
             elif state == 3:
                 state = 3
 
         elif char == 'b':
-            if state == 1:
-                state = 2
-            elif state == 1:
+            if state == 0:
                 state = 3
-            elif state == 2:
+            elif state == 1:
                 state = 2
             elif state == 3:
                 state = 3
